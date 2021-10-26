@@ -7,6 +7,8 @@ Symlink ziher_mono/ziher/F18 <- ziher_mono/F18
     REM run as administrator:
     mklink /D  %USERPROFILE%\dev\ziher_mono\ziher\src\F18 %USERPROFILE%\dev\ziher_mono\F18 
 
+    %USERPROFILE%\dev\ziher_mono\ziher\src> bazel-x86 build //F18:F18.dll  --//bazel:windows_build=x86
+
 
 ## bazel query
 
@@ -145,4 +147,30 @@ C:\Users\ernad.husremovic.SA\dev\ziher_mono\ziher\src>bazel-x86 query //...
 //bazel:windows_x64
 //bazel:windows_build
 Loading: 31 packages loaded
+</pre>
+
+
+F18:
+
+<pre>
+bazel-x86 query //F18/...
+//F18/include:headers
+//F18:ziher
+//F18:F18-klijent-lib_import
+//F18:F18-klijent-lib.so
+//F18:F18-klijent
+//F18:F18_import
+//F18:F18.so
+//F18:ziher_import
+//F18:ziher.so
+//F18:F18
+//F18:F18_dll_import
+//F18:F18_import_lib
+//F18:F18.dll
+//F18:ziher_dll_import
+//F18:ziher_import_lib
+//F18:ziher.dll
+//F18:F18_zh
+//F18/include:headers_filegroup
+//F18:fin_headers_filegroup
 </pre>
