@@ -1,0 +1,6 @@
+[submodule "ziher"]
+	path = ziher
+	url = git@github.com:hernad/ziher.git
+[submodule "F18"]
+	path = F18
+	url = git@github.com:hernad/F18.git
