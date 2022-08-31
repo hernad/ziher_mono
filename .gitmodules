@@ -4,3 +4,6 @@
 [submodule "F18"]
 	path = F18
 	url = git@github.com:hernad/F18.git
+[submodule "F18py_install"]
+	path = F18py_install
+	url = git@github.com:hernad/F18py_install.git
